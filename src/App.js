@@ -8,11 +8,22 @@ import './App.css';
 class BooksApp extends React.Component {
   state = {
     shelves: {
-      currentlyReading: [ { authors: 'Harper Lee', title: 'To Kill a Mockingbird' } ],
+      currentlyReading: [],
       wantToRead: [],
       read: []
     }
   };
+
+  componentDidMount() {
+    BooksAPI.getAll().then((books) => {
+      let shelves = {};
+      shelves.currentlyReading = books.filter((book) => book.shelf === 'currentlyReading');
+      shelves.wantToRead = books.filter((book) => book.shelf === 'wantToRead');
+      shelves.read = books.filter((book) => book.shelf === 'read');
+
+      this.setState({ shelves })
+    });
+  }
 
   render() {
     return (
