@@ -55,6 +55,15 @@ $ npm run build
 ```
 ---
 
+## Lint
+
+Run lint tools.
+
+```bash
+$ npm run eslint
+```
+---
+
 ## Deploy
 
 Deploys the to GitHub Pages app using `gh-pages` package.
