@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
 import { debounce } from 'throttle-debounce';
 import * as BooksAPI from "./BooksAPI";
@@ -87,5 +88,10 @@ class SearchPage extends Component {
     );
   }
 }
+
+SearchPage.propTypes = {
+  books: PropTypes.array.isRequired,
+  handleBookMove: PropTypes.func.isRequired
+};
 
 export default SearchPage;

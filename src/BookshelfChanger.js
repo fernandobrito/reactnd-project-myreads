@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class BookshelfChanger extends Component {
   getShelfFromBook(book) {
@@ -28,5 +29,10 @@ class BookshelfChanger extends Component {
     );
   }
 }
+
+BookshelfChanger.propTypes = {
+  books: PropTypes.array.isRequired,
+  handleBookMove: PropTypes.func.isRequired
+};
 
 export default BookshelfChanger;

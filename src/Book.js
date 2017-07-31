@@ -1,30 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import BookshelfChanger from "./BookshelfChanger";
 
-class Book extends Component {
-  render() {
-    const book = this.props.book;
-
-    return (
-      <div className="book">
-        <div className="book-top">
-          <div className="book-cover"
-               style={{ width: 128,
-                 height: 193,
-                 backgroundImage: `url("${book.imageLinks.thumbnail}")`
-               }}
-          />
-          <BookshelfChanger
-            book={book}
-            books={this.props.books}
-            handleBookMove={this.props.handleBookMove}
-          />
-        </div>
-        <div className="book-title">{book.title}</div>
-        <div className="book-authors">{book.authors ? book.authors.join(", ") : ''}</div>
+function Book(props) {
+  return (
+    <div className="book">
+      <div className="book-top">
+        <div className="book-cover"
+             style={{ width: 128,
+               height: 193,
+               backgroundImage: `url("${props.book.imageLinks.thumbnail}")`
+             }}
+        />
+        <BookshelfChanger
+          book={props.book}
+          books={props.books}
+          handleBookMove={props.handleBookMove}
+        />
       </div>
-    )
-  }
+      <div className="book-title">{props.title}</div>
+      <div className="book-authors">{props.book.authors ? props.book.authors.join(", ") : ''}</div>
+    </div>
+  )
 }
+
+Book.propTypes = {
+  book: PropTypes.object.isRequired,
+  books: PropTypes.array.isRequired,
+  handleBookMove: PropTypes.func.isRequired
+};
 
 export default Book;
