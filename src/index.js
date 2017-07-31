@@ -5,7 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter
+    basename={process.env.REACT_APP_BASE_PATH || '/'}
+  >
     <App />
   </BrowserRouter>,
   document.getElementById('root')
