@@ -22,7 +22,7 @@ class SearchPage extends Component {
     this.setState({ query });
 
     this.performSearch(query);
-  };
+  }
 
   performSearch(query) {
     if (query === '' || query === undefined){
@@ -37,10 +37,10 @@ class SearchPage extends Component {
         this.setState({ results: [] });
       }
     });
-  };
+  }
 
   render() {
-    let message = undefined;
+    let message;
 
     if (this.state.query === '') {
       message = (
