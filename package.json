@@ -10,7 +10,7 @@
     "throttle-debounce": "^1.0.1"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "1.0.10"
   },
   "scripts": {
     "predeploy": "npm run build",
