@@ -8,7 +8,6 @@ Contact me on [Linkedin](https://www.linkedin.com/in/fernandosmbrito), or open a
 # MyReads
 
 [![Code Climate](https://codeclimate.com/github/fernandobrito/reactnd-project-myreads/badges/gpa.svg)](https://codeclimate.com/github/fernandobrito/reactnd-project-myreads)
-[![Test Coverage](https://codeclimate.com/github/fernandobrito/reactnd-project-myreads/badges/coverage.svg)](https://codeclimate.com/github/fernandobrito/reactnd-project-myreads/coverage)
 [![Issue Count](https://codeclimate.com/github/fernandobrito/reactnd-project-myreads/badges/issue_count.svg)](https://codeclimate.com/github/fernandobrito/reactnd-project-myreads)
 
 Simple app to manage lists of current reading, want to read and already read books. 
