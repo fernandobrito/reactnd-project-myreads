@@ -1,9 +1,9 @@
 **Have a question or suggestion?**
 Contact me on [Linkedin](https://www.linkedin.com/in/fernandosmbrito), or open a pull request on this project.
 
----
-
 **Programming assignment for the [Udacity React Nanodegree](https://www.udacity.com/course/react-nanodegree--nd019) program.**
+
+---
 
 # MyReads
 
@@ -17,7 +17,6 @@ Built with React and React Router. This project was bootstrapped with [Create Re
 
 Hosted on: https://fernandobrito.github.io/reactnd-project-myreads
 
----
 
 ## API
 
@@ -26,8 +25,6 @@ This applications consumes data from an API designed specifically for the assign
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results. 
 
 
----
-
 ## Installation
 
 Installs all necessary modules to run the current project.
@@ -35,7 +32,7 @@ Installs all necessary modules to run the current project.
 ```bash
 $ npm install
 ```
----
+
 
 ## Development
 
@@ -44,7 +41,7 @@ Runs development server, with live reloading, on http://localhost:3000.
 ```bash
 $ npm start
 ```
----
+
 
 ## Build
 
@@ -53,7 +50,7 @@ Builds the app for production to the `build` folder.
 ```bash
 $ npm run build
 ```
----
+
 
 ## Lint
 
@@ -62,7 +59,7 @@ Run lint tools.
 ```bash
 $ npm run eslint
 ```
----
+
 
 ## Deploy
 
@@ -71,7 +68,7 @@ Deploys the to GitHub Pages app using `gh-pages` package.
 ```bash
 $ npm run deploy
 ```
----
+
 
 ## Contributing
 
@@ -81,8 +78,12 @@ $ npm run deploy
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
----
 
 ## Contributors
 
 * Fernando Brito ([fernandobrito](https://github.com/fernandobrito))
+
+
+## License
+
+This project is licensed under the MIT License. Check the `LICENSE` file.
